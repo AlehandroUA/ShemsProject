@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ShapeObjectEditor</class>
+ <widget class="QMainWindow" name="ShapeObjectEditor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>749</width>
+    <height>449</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::ActionsContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">ShapeObjectEditor{
+	background-color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>451</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>749</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuABOBA">
+    <property name="contextMenuPolicy">
+     <enum>Qt::ActionsContextMenu</enum>
+    </property>
+    <property name="title">
+     <string>Тип фігури</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="line"/>
+    <addaction name="lineCirlcle"/>
+    <addaction name="ellipse"/>
+    <addaction name="rectangle"/>
+    <addaction name="cube"/>
+    <addaction name="dot"/>
+    <addaction name="separator"/>
+    <addaction name="actionopenTab"/>
+    <addaction name="separator"/>
+    <addaction name="openTableCoord"/>
+   </widget>
+   <addaction name="menuABOBA"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="line"/>
+   <addaction name="ellipse"/>
+   <addaction name="rectangle"/>
+   <addaction name="dot"/>
+   <addaction name="lineCirlcle"/>
+   <addaction name="cube"/>
+  </widget>
+  <action name="line">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/res/icon/Icons8-Windows-8-Editing-Line.512.png</normaloff>:/res/icon/Icons8-Windows-8-Editing-Line.512.png</iconset>
+   </property>
+   <property name="text">
+    <string>Лінія</string>
+   </property>
+  </action>
+  <action name="ellipse">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/res/icon/Pictogrammers-Material-Ellipse-outline.512.png</normaloff>:/res/icon/Pictogrammers-Material-Ellipse-outline.512.png</iconset>
+   </property>
+   <property name="text">
+    <string>Еліпс</string>
+   </property>
+  </action>
+  <action name="rectangle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/res/icon/Pictogrammers-Material-Rectangle-outline.512.png</normaloff>:/res/icon/Pictogrammers-Material-Rectangle-outline.512.png</iconset>
+   </property>
+   <property name="text">
+    <string>Прямокутник</string>
+   </property>
+  </action>
+  <action name="dot">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/res/icon/Ionic-Ionicons-Ellipse.512.png</normaloff>:/res/icon/Ionic-Ionicons-Ellipse.512.png</iconset>
+   </property>
+   <property name="text">
+    <string>Точка</string>
+   </property>
+  </action>
+  <action name="lineCirlcle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/res/icon/Pictogrammers-Material-Vector-line.512.png</normaloff>:/res/icon/Pictogrammers-Material-Vector-line.512.png</iconset>
+   </property>
+   <property name="text">
+    <string>Лінія з колами</string>
+   </property>
+  </action>
+  <action name="cube">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/res/icon/Aniket-Suvarna-Box-Regular-Bx-cube.512.png</normaloff>:/res/icon/Aniket-Suvarna-Box-Regular-Bx-cube.512.png</iconset>
+   </property>
+   <property name="text">
+    <string>Куб</string>
+   </property>
+  </action>
+  <action name="actionopenTab">
+   <property name="text">
+    <string>Змінити розміри куба</string>
+   </property>
+  </action>
+  <action name="openTableCoord">
+   <property name="text">
+    <string>Вивести таблицю</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resourse.qrc"/>
+ </resources>
+ <connections/>
+</ui>

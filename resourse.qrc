@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>icon/Hand.png</file>
+        <file>icon/Info.png</file>
+        <file>icon/Minus..png</file>
+        <file>icon/Plus.png</file>
+        <file>icon/Pointer.png</file>
+        <file>icon/ff333fb0dfe3a1a41f8653302085f59b.jpg</file>
+        <file>icon/Icons8-Windows-8-Editing-Line.512.png</file>
+        <file>icon/Ionic-Ionicons-Ellipse.512.png</file>
+        <file>icon/Pictogrammers-Material-Ellipse-outline.512.png</file>
+        <file>icon/Pictogrammers-Material-Rectangle-outline.512.png</file>
+        <file>icon/Amitjakhu-Drip-Cross.512.png</file>
+        <file>icon/imgonline-com-ua-Resize-SOksuzPw3jUlkN.jpg</file>
+        <file>icon/Aniket-Suvarna-Box-Regular-Bx-cube.512.png</file>
+        <file>icon/Pictogrammers-Material-Vector-line.512.png</file>
+    </qresource>
+</RCC>
